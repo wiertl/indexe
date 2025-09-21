@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 5-Jakubiak</title>
+<script language="JavaScript">
+
+ function WinOpen_jakubiak1() {
+   window.open("grafika1.html","graf1","width=300,height=350,top=500,left=350");
+}
+ function WinOpen_jakubiak2() {
+   window.open("grafika2.html","graf2","width=300,height=350,top=500,left=680");
+}
+ function WinOpen_jakubiak3() {
+   window.open("grafika3.html","graf3","width=300,height=350,top=500,left=1010");
+}
+ function WinOpen_jakubiak4() {
+   window.open("grafika4.html","graf4","width=300,height=350,top=500,left=1340");
+}
+ function okno_zamknij_jakubiak() {
+   window.close();
+}
+</script>
+</head>
+<body>
+<center>
+   <h2 style="color:red;">
+      wykonal: Jakubiak mój numer w dzienniku 5, czyli mam układ (5 mod 4=1) układ 1
+   </h2>
+   <input type="button" value="grafika1" onclick="WinOpen_jakubiak1()">
+   <input type="button" value="grafika2" onclick="WinOpen_jakubiak2()">
+   <input type="button" value="grafika3" onclick="WinOpen_jakubiak3()">
+   <input type="button" value="grafika4" onclick="WinOpen_jakubiak4()">
+   <br><br>
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_jakubiak()">
+</center>
+</body>
+</html>
