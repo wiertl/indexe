@@ -1,0 +1,24 @@
+<html>
+ <body>
+ <div style="color:green;font-size:38px;">
+ <script language="JavaScript">
+ var D1_jak=prompt("Data1=","");
+ var G1_jak=prompt("Godzina1=","");
+ var D2_jak=prompt("Data2=","");
+ var G2_jak=prompt("Godzina2=","");
+ var sekund;
+ var a=parseFloat(D1_jak);
+ var b=parseFloat(D2_jak);
+ var g1=parseFloat(G1_jak);
+ var g2=parseFloat(G2_jak);
+ sekund=((a*24+g1)-(b*24+g2))*3600;
+ document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+ function okno_zamknij_jakubiak()
+ {
+ window.close()
+ }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_jakubiak()"/>
+ </body>
+ </html>
