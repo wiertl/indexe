@@ -1,0 +1,51 @@
+<html>
+<head>
+<script language="JavaScript">
+function drabina(d,x)
+{ 
+c=parseFloat(d)
+d=parseFloat(x)
+drabina_w=Math.sqrt((c*c)+(d*d))
+document.getElementsByName('drab_jaku')[0].value=drabina_w.toFixed(2);
+alert("drabina="+drabina_w.toFixed(2)+" cm");
+pokaz1.innerHTML="drabina="+drabina_w.toFixed(2)+" cm"+"<br>";
+}
+function alfa(d,x)
+{
+c=parseFloat(d)
+d=parseFloat(x)
+var sinA = c/Math.sqrt((c*c)+(d*d));
+var aRad = Math.asin(sinA);
+var aDeg = aRad * (180 / Math.PI);
+alfa_w=aDeg;
+document.getElementsByName('alfa_jaku')[0].value=alfa_w.toFixed(2);
+alert("alfa="+alfa_w.toFixed(2));
+pokaz2.innerHTML="alfa="+alfa_w.toFixed(2)+"<br>";
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny i kątu
+<br><br>
+<form name="formularz" action="..." onsubmit="drabina(this.bok_d.value,this.bok_x.value);
+alfa(this.bok_d.value,this.bok_x.value);return false">
+podaj D=
+<input size="6" name="bok_d">
+podaj X=
+<input size="6" name="bok_x">
+<br><br>
+<input type="submit" value="oblicz">
+<br><br>
+drabina=<input size="6" name="drab_jaku">
+alfa=<input size="6" name="alfa_jaku">
+</form>
+<table>
+<tr>
+<td id="pokaz1"></td>
+</tr>
+<tr>
+<td id="pokaz2"></td>
+</tr>
+</table>
+</body>
+</html>

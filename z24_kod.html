@@ -1,0 +1,48 @@
+<html>
+<body>
+<textarea cols="90" rows="25">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:pink;font-size:50px;">
+<script language="JavaScript">
+var x1_jaku=parseFloat(prompt("x1=",""));
+var x2_jaku=parseFloat(prompt("x2=",""));
+function y1_jaku(x1) {
+return 3 * Math.pow(x1_jaku, 6/8);
+}
+function x1_rad(x1) {
+var st_jaku=x1_jaku;
+return (st_jaku * Math.PI) / 180;
+}
+function y2_jaku(x1){
+var st_jaku=x1_jaku;
+var rad_jaku=(st_jaku * Math.PI) / 180;
+return 2 * Math.cos(rad_jaku) + 3 * Math.sin(rad_jaku);
+}
+function y3_jaku(x1,x2) {
+var x1_5= Math.pow(x1_jaku, 5);
+var x2_4= Math.pow(x2_jaku, 4);
+var x1_x2= Math.abs(x1_jaku - x2_jaku);
+var pierwiastek= Math.cbrt(x1_5 + 2 * x2_4);
+return pierwiastek * x1_x2;
+}
+var y1_wynik =y1_jaku(x1_jaku);
+var y2_wynik =y2_jaku(x1_jaku);
+var y3_wynik =y3_jaku(x1_jaku,x2_jaku);
+var x1_radiany= x1_rad(x1_jaku);
+document.write("x1= " +x1_jaku+"&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x2= " +x2_jaku+"<br>");
+document.write("x1(stopnie)= " +x1_jaku+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x1(radiany)= " +x1_radiany.toFixed(2)+"<br>");
+document.write("y1= " +y1_wynik.toFixed(2)+"<br>");
+document.write("y2= " +y2_wynik.toFixed(2)+"<br>");
+document.write("y3= " +y3_wynik.toFixed(2)+"<br>");
+</script>
+</div>
+</body>
+</html>
+</tekstarea>
+</body>
+</html>
