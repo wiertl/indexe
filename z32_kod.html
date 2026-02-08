@@ -1,0 +1,38 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<html>
+  <head>
+    <script type="text/javascript">
+     function wazon(kolor_k,material_k,waga_k,ksztalt_k)//początek konstruktora
+             {
+                    this.kolor=kolor_k;
+                    this.material=material_k;
+                    this.waga=waga_k;
+                    this.ksztalt=ksztalt_k;
+             }//koniec konstruktora
+     wazon.prototype.wypisz = function () //definicja metody
+                            {
+                                    alert(this.kolor + ' ' + this.material + ' ' + this.waga + ' ' + this.ksztalt);
+                            };
+             var wazon1 = new wazon("Zielony", "Gliniany", "5kg", "Kwadratowy"); // nowy obiekt mebel1
+             var wazon2 = new wazon('Czarny', 'szklany', '3kg', 'Okragly');
+             var wazon3 = new wazon('Niebieski', 'Ceramczny', '10kg', 'Prostokat');
+             wazon1.wypisz(); // uruchomienie metody wypisz() dotyczącej mebel 1
+             wazon2.wypisz();
+             wazon3.wypisz();
+      document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól mebeli
+   document.write("wazon pierwszy"+" "+wazon1.kolor+" "+wazon1.material+" "+wazon1.waga+" "+wazon1.ksztalt+"<p>");
+   document.write("wazon drugi"+" "+wazon2.kolor+" "+wazon2.material+" "+wazon2.waga+" "+wazon2.ksztalt+"<p>");
+   document.write("wazon trzeci"+" "+wazon3.kolor+" "+wazon3.material+" "+wazon3.waga+" "+wazon3.ksztalt+"<p>");
+      </script>
+   </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
+</tekstarea>
+</body>
+</html>
