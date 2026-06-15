@@ -1,0 +1,32 @@
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Jkubiak 3K</title>
+</head>
+<body>
+  <script>
+    function pętla() {
+      let nazwisko_jak = "Jakubiak";
+      let imie_jak = "Wojciech";
+      let liczba_liter_nazwiska_jak = nazwisko_jak.length;
+
+      let ile_razy_wyswietlic_jak = (liczba_liter_nazwiska_jak % 4) + 10; 
+      let wielkosc_liter_jak = (liczba_liter_nazwiska_jak % 3) + 40;      
+      let wynik = "ilość wykonania pętli = " + ile_razy_wyswietlic_jak + "<br>";
+      wynik += "wielkość liter = " + wielkosc_liter_jak + "px<br><br>";
+
+      for (var i_jak = 1; i_jak <= ile_razy_wyswietlic_jak; i_jak++) {
+        if (i_jak % 2 == 1) {
+          wynik += "<span style='font-size:" + wielkosc_liter_jak + "px'>" + nazwisko_jak + "</span><br>";
+        } else {
+          wynik += "<span style='font-size:" + wielkosc_liter_jak + "px'>" + imie_jak + "</span><br>";
+        }
+      }
+      document.getElementById("wynik").innerHTML = wynik;
+    }
+</script>
+</body>
+</html>
+</textarea>

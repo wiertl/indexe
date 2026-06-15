@@ -1,0 +1,40 @@
+<textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Jakubiak 3K </title>
+</head>
+<body>
+
+<div style="color:red;font-size:50px;">
+<script>
+var x = prompt("podaj argument x=", "");
+var x_jak= parseFloat(x);
+
+document.write("czytany argument x = " + x_jak + "<br>");
+
+function f_jak(x_jak)
+{
+    if(x_jak >= 1)
+    {
+        return 1;
+    }
+    else if((x_jak >= -2) && (x_jak < 1))
+    {
+        return x_jak * x_jak;
+    }
+    else if(x_jak < -2)
+    {
+        return 4;
+    }
+}
+
+var wynik = f_jak(x_jak);
+document.write("f(x) = " + wynik.toFixed(2) + "<br>");
+</script>
+</div>
+
+</body>
+</html>
+</textarea>

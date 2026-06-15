@@ -1,0 +1,32 @@
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jakubiak 3K</title>
+    <script>
+        
+        let nazwisko_jak = "Jakubiak"; 
+        let imie_jak = "Wojciech";       
+
+        let liczba_liter_nazwiska_jak = nazwisko_jak.length; 
+        let ile_razy_wyswietlic_jak = (liczba_liter_nazwiska_jak % 4) + 10; 
+        let wielkosc_liter_jak = (liczba_liter_nazwiska_jak % 3) + 40; 
+
+        let L_jak = parseFloat(prompt("Podaj liczbę:","")); 
+
+        if (L_jak % 2 == 0) {             
+for (let i_jak = 1; i_jak ; i_jak++) { 
+                document.write("<span style='color:blue; font-size:" + wielkosc_liter_jak + "px'>" + nazwisko_jak + "</span><br>"); 
+            }
+        } else {
+            for (let i_jak = 1; i_jak ; i_jak++) {                 
+document.write("<span style='color:green; font-size:" + wielkosc_liter_jak + "px'>" + imie_jak + "</span><br>");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
+</textarea>

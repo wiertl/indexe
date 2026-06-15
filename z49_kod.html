@@ -1,0 +1,28 @@
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Jakubiak 3K</title>
+</head>
+<body>
+  <script>
+    function Jakubiak_Zadanie47() {
+      let a_jak, b_jak, c_jak;
+      do {
+        a_jak = parseFloat(prompt("Podaj bok a:", ""));
+        b_jak = parseFloat(prompt("Podaj bok b:", ""));
+        c_jak = parseFloat(prompt("Podaj bok c:", ""));
+      } while (
+        !(a_jak > 0 && b_jak > 0 && c_jak > 0 && 
+          a_jak + b_jak > c_jak && 
+          a_jak + c_jak > b_jak && 
+          b_jak + c_jak > a_jak)
+      );
+      document.getElementById("wynik").innerHTML = 
+        "Podane boki tworzą trójkąt:<br>a = " + a_jak + "<br>b = " + b_jak + "<br>c = " + c_jak;
+}
+</script>
+</body>
+</html>
+</textarea>

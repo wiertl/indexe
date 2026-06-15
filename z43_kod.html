@@ -1,0 +1,99 @@
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title> Jakubiak 3K </title>
+</head>
+<body>
+
+<h1>Rodzaje pętli w JavaScript</h1>
+
+<h2>1. Pętla for</h2>
+<p><b>Konstrukcja:</b></p>
+<pre>
+for (inicjalizacja; warunek; zmiana)
+{
+    instrukcje;
+}
+</pre>
+
+<p><b>Opis:</b><br>
+Pętla for służy do wykonania instrukcji określoną liczbę razy.</p>
+
+<p><b>Schemat blokowy:</b></p>
+<pre>
+Start
+  |
+Inicjalizacja
+  |
+Warunek?
+ /     \
+Tak    Nie
+ |       |
+Kod   Koniec
+ |
+Zmiana licznika
+ |
+Powrót do warunku
+</pre>
+
+<hr>
+
+<h2>2. Pętla while (z kontrolowanym wejściem)</h2>
+<p><b>Konstrukcja:</b></p>
+<pre>
+while (warunek)
+{
+    instrukcje;
+}
+</pre>
+
+<p><b>Opis:</b><br>
+Warunek jest sprawdzany przed wykonaniem instrukcji. Jeśli jest fałszywy, pętla nie wykona się ani razu.</p>
+
+<p><b>Schemat blokowy:</b></p>
+<pre>
+Start
+  |
+Warunek?
+ /     \
+Tak    Nie
+ |       |
+Kod   Koniec
+ |
+Powrót do warunku
+</pre>
+
+<hr>
+
+<h2>3. Pętla do...while (z kontrolowanym wyjściem)</h2>
+<p><b>Konstrukcja:</b></p>
+<pre>
+do
+{
+    instrukcje;
+}
+while (warunek);
+</pre>
+
+<p><b>Opis:</b><br>
+Instrukcje wykonują się co najmniej jeden raz, ponieważ warunek jest sprawdzany dopiero na końcu.</p>
+
+<p><b>Schemat blokowy:</b></p>
+<pre>
+Start
+  |
+Kod
+  |
+Warunek?
+ /     \
+Tak    Nie
+ |       |
+Powrót Koniec
+do kodu
+</pre>
+
+</body>
+</html>
+</textarea>

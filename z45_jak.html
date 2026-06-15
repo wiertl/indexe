@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title> Jakubiak 3K</title>
+<script>
+function pętla() {
+    alert("Przycisk kliknięty!");
+}
+
+function petla() {
+   
+    let koniec_petli_jak = parseInt(prompt("Podaj liczbę końca pętli:"));
+    let wynik = "";
+    for (let i_jak = 1; i_jak <= koniec_petli_jak; i_jak++) { 
+        wynik += "Liczba: " + i_jak + "<br>";     
+}
+    document.getElementById("wynik").innerHTML = wynik;  
+} 
+</script>
+</head>
+<body>
+<input type="button" value="przycisk1" onclick="pętla()">    
+<input type="button" value="przycisk2" onclick="petla()">    
+<div id="wynik" style="margin-top:20px;"></div> 
+</body>
+</html>

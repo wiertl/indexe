@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title> Jakubiak 3K</title>
+</head>
+<body>
+
+<script>
+
+var imie_jak = "Wojciech";
+var nazwisko_jak  = "Jakubiak";
+var dzien_jak  = 15;
+var nr_dziennika_jak  = 5;
+
+
+var liczba1_jak  = imie_jak .length;
+var liczba2_jak  = liczba1_jak  + 7;
+var liczba3_jak = nazwisko_jak .length;
+var liczba4_jak = liczba3_jak  + 4;
+
+
+var size_jak = 40 + (nr_dziennika_jak  % 7);
+
+
+document.write("<p style=\"color:red; font-size:" + size_jak + "px; background:grey;\">");
+document.write(imie_jak + " " + nazwisko_jak  + "<br>");
+document.write("liczba1=" + liczba1_jak  + " liczba2=" + liczba2_jak  + "<br>");
+document.write("liczba3=" + liczba3_jak  + " liczba4=" + liczba4_jak );
+document.write("</p>");
+
+
+document.write("<p style=\"color:blue; font-size:" + size_jak + "px; background:grey;\">");
+document.write("MENU:<br>");
+document.write(liczba1_jak  + " - teoria operatorów logicznych<br>");
+document.write((liczba3_jak +20) + " - przedział (" + liczba1_jak  + ";" + liczba2_jak  + "]<br>");
+document.write((dzien_jak +50) + " - przedział (-∞;" + liczba1_jak  + ") lub [" + liczba2_jak  + ";+∞)<br>");
+document.write("</p>");
+
+var opcja_jak = parseInt(prompt("Podaj numer opcji=", ""));
+
+
+if (opcja_jak  == liczba1_jak ) {
+  document.write("<font color=\"green\" size=\"7\">Teoria: && - i, || - lub, ! - negacja</font><br>");
+}
+
+
+else if (opcja_jak  == (liczba3_jak +20)) {
+  var liczba_jak  = parseFloat(prompt("Podaj liczbę=", ""));
+  if ((liczba_jak  > liczba1_jak ) && (liczba_jak  <= liczba2_jak )) {
+    document.write("<font color=\"green\" size=\"7\">Liczba należy do przedziału</font><br>");
+  } else {
+    document.write("<font color=\"red\" size=\"7\">Liczba NIE należy do przedziału</font><br>");
+  }
+}
+
+
+else if (opcja_jak == (dzien_jak  +50)) {
+  var liczba2_jak = parseFloat(prompt("Podaj liczbę=", ""));
+  if ((liczba2_jak  < liczba1_jak ) || (liczba2_jak  >= liczba2_jak )) {
+    document.write("<font color=\"green\" size=\"7\">Liczba należy do przedziału</font><br>");
+  } else {
+    document.write("<font color=\"red\" size=\"7\">Liczba NIE należy do przedziału</font><br>");
+  }
+}
+
+else {
+  document.write("<font color=\"red\" size=\"7\">Nie ma takiej opcji</font><br>");
+}
+</script>
+
+</body>
+</html>
